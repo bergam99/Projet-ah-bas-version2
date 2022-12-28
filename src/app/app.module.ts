@@ -15,6 +15,7 @@ import { AchatComponent } from './pages/achat/achat.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ProposComponent } from './pages/propos/propos.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     AchatComponent,
     ContactComponent,
     ProposComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
