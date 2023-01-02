@@ -1,0 +1,40 @@
+a{
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #EBD4D1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText {
+    width: 100%;
+    padding: 60px 8% 75px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.empty {
+    width: 12.2%;
+    background-color: #DFBDB9;
+    
+}
+
+.semibold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.barreEmail {
+    background-color: #FFF0EB;
+    border: 2px solid #DFBDB9;
+}
+
+.boutton {
+    background-color: #DFBDB9;
+    border: none;
+    color: #61504B;
+    padding: 4px;
+}

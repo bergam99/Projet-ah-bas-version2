@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
-import { CategoryComponent } from './pages/category/category.component';
 import { JournalComponent } from './pages/journal/journal.component';
 import { CgvComponent } from './pages/cgv/cgv.component';
 import { PolitiqueComponent } from './pages/politique/politique.component';
@@ -16,13 +15,14 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProposComponent } from './pages/propos/propos.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { CategoryComponent } from './components/category/category.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ProductsComponent,
-    CategoryComponent,
     JournalComponent,
     CgvComponent,
     PolitiqueComponent,
@@ -32,7 +32,9 @@ import { HeaderComponent } from './components/header/header.component';
     ContactComponent,
     ProposComponent,
     NotFoundComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
