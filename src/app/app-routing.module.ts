@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CategoryComponent } from './components/category/category.component';
 import { AchatComponent } from './pages/achat/achat.component';
-import { CategoryComponent } from './pages/category/category.component';
 import { CgvComponent } from './pages/cgv/cgv.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
