@@ -16,6 +16,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { ProposComponent } from './pages/propos/propos.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HeaderComponent } from './components/header/header.component';
     ContactComponent,
     ProposComponent,
     NotFoundComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
