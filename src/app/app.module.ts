@@ -17,6 +17,7 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CategoryComponent } from './components/category/category.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CategoryComponent } from './components/category/category.component';
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    CategoryComponent
+    CategoryComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -44,3 +46,4 @@ import { CategoryComponent } from './components/category/category.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
