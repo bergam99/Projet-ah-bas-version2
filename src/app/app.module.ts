@@ -16,7 +16,11 @@ import { ProposComponent } from './pages/propos/propos.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { CategoryComponent } from './components/category/category.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { PaiementComponent } from './pages/paiement/paiement.component';
+import { PaiementFormComponent } from './components/paiement-form/paiement-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PaiementSuccessComponent } from './pages/paiement-success/paiement-success.component';
 
 @NgModule({
   declarations: [
@@ -34,11 +38,15 @@ import { CategoryComponent } from './components/category/category.component';
     NotFoundComponent,
     HeaderComponent,
     FooterComponent,
-    CategoryComponent
+    CategoryComponent,
+    PaiementComponent,
+    PaiementFormComponent,
+    PaiementSuccessComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
