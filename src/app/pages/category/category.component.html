@@ -1,11 +1,12 @@
 <main>
     <ul>
-        <li *ngFor="let item of products" class="col m4 s6">
+       <li *ngFor="let item of products" class="col m4 s6">
             <article>
+                <a routerLink="/products"><img src="{{item.image}}" alt="img de produits"></a>
                 <h3>{{item.productName}}</h3>
                 <p>{{item.price}} € </p>
                 <p>{{item.description}}</p>
-                <a routerLink="*"></a><img src="{{item.image}}" alt="img de produits">
+                <button>Ajouter au panier</button>
             </article>
         </li>
     </ul>

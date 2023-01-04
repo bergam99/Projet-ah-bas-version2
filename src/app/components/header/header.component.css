@@ -1,9 +1,12 @@
 
 /* header */
+a:hover{
+    color: #762625;
+}
+
 header {
     width: 100%;
     height: 957px;
-   
     position: relative;
 }
 
@@ -25,6 +28,7 @@ header {
     align-items: center;
 }
 
+
 #logoAhBas {
     height: 75px;
     object-fit: cover;
@@ -41,8 +45,8 @@ a {
 
 
 .iconHeader img {
-    height: 47px;
-    width: 47px;
+    height: 35px;
+    width: 35px;
 }
 
 

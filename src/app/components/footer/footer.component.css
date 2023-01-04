@@ -3,6 +3,10 @@ a{
     color: black;
 }
 
+a:hover{
+    color: #762625;
+}
+
 footer {
     background-color: #EBD4D1;
     display: flex;

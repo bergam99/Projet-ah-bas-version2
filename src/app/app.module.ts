@@ -16,8 +16,13 @@ import { ProposComponent } from './pages/propos/propos.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PaiementComponent } from './pages/paiement/paiement.component';
+import { PaiementFormComponent } from './components/paiement-form/paiement-form.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PaiementSuccessComponent } from './pages/paiement-success/paiement-success.component';
 import { CategoryComponent } from './components/category/category.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+
 
 @NgModule({
   declarations: [
@@ -36,11 +41,16 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
     HeaderComponent,
     FooterComponent,
     CategoryComponent,
+    PaiementComponent,
+    PaiementFormComponent,
+    PaiementSuccessComponent
     ProductDetailsComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
