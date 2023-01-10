@@ -1,1 +1,180 @@
-<p>panier works!</p>
+<body>
+    <!-- Logo -->
+    <header class="flex-logo">
+        <a routerLink=""><img src="assets/img/vraiLogo.png" alt="logo"></a>
+    </header>
+
+    <!-- logo mobile -->
+    <header class="flex-logo logo-mobile">
+        <a href="#">
+            <h1>Ah-bas!</h1>
+        </a>
+    </header>
+
+
+    <main class="flex">
+        <!-- Mon panier d'achat -->
+        <section id="panier">
+            <h2>MON PANIER D'ACHAT</h2>
+            <h3>Vos produits</h3>
+
+            <div class="flex width">
+                <img src="img/produit.png" alt="produit">
+
+                <div class="flex flex-gap width">
+                    <article class="line-height-2">
+                        <p class="bold title">Nom du produit</p>
+                        <br>
+                        <p>DESCRIPTION</p>
+                        <p class="title">0.00€</p>
+                        <br><a href="#">SUPPRIMER</a>
+                    </article>
+                    <div class="button-qte">
+
+                        <div class="qte">
+                            QTÉ : n
+                        </div>
+                        <div class="flex-button flex">
+                            <button id="plus">+</button>
+                            <button id="moins">-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <section id="bottom">
+                <button type="button" onclick="location.href='achat.html'">FINALISER MA COMMANDE</button>
+                <p class="mention">En passant votre commande, vous acceptez
+                    <a href="#">les conditions d'utilisation</a>
+                </p>
+                <br>
+                <a class="mention" href="#">Retour à la boutique</a>
+            </section>
+        </section>
+
+
+        <!-- TOTAL -->
+        <section id="total">
+            <span class="title">TOTAL</span>
+            <section class="sous-total">
+                <p class="space space-1 underline">Sous-total 0.00€</p>
+                <p class="space space-2 underline">Livraison 0.00€</p>
+                <p class="space space-3 underline">Taxes-lnclues 0.00€</p>
+                <p class="space space-4">Total 0.00€</p>
+            </section>
+            <br>
+            <div class="flex">
+                <section id="bottom-total">
+                    <button>FINALISER MA COMMANDE</button>
+                    <p class="mention">En passant votre commande, vous acceptez
+                        <a href="#">
+                            les conditions d'utilisation
+                        </a>
+                    </p>
+                    <br>
+                    <a class="mention" href="#">Retour à la boutique</a>
+                </section>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+    <div class="flex gap besoin-desktop">
+        <section class="invisible"></section>
+
+        <section id="besoin" class="column flex-1">
+            <span class="title">BESOIN D'AIDE ?</span>
+            <p><br>Le Service Client est à votre disposition du lundi au vendredi de 10h à 21h et le samedi de 10h à
+                19h.</p>
+            <br>
+
+            <div class="button-contact">
+                <button>PAR EMAIL</button>
+                <button>Par Téléphone</button>
+            </div>
+            <p><img id="icon" src="img/credit-card.png" alt="img"> &nbsp;PAIEMENT 100 % SÉCURISÉ</p>
+            <p><br>Les données de votre carte bancaire sont envoyées de manière sécurisée. Toutes les
+                informations sont protégées à l’aide de la technologie Secure Sockets Layer (SSL).</p>
+
+            <p><br><br><img id="icon" src="img/exchange.png" alt=""> &nbsp; ÉCHANGE ET REMBOURSEMENT</p>
+            <p><br>Pendant la période de fêtes, le délai de retour est prolongé jusqu’au 20 janvier 2023 pour
+                toute commande passée entre le 15 novembre et le 20 décembre 2022 inclus.</p>
+        </section>
+    </div>
+
+
+    <div class="flex gap besoin-mobile">
+        <section class="invisible"></section>
+
+        <section id="besoin" class="column flex-1">
+            <!-- <summery><span class="border-bottom">BESOIN D'AIDE ?</span></summery> -->
+            <details>
+                <p><br>Le Service Client est à votre disposition du lundi au vendredi de 10h à 21h et le samedi de 10h à
+                    19h.</p>
+                <!-- <div class="button-contact flex">
+                        <button>PAR EMAIL</button>
+                        <button>Par Téléphone</button>
+                    </div> -->
+                <p><img id="icon" src="img/credit-card.png" alt="img"> &nbsp;PAIEMENT 100 % SÉCURISÉ</p>
+                <p><br>Les données de votre carte bancaire sont envoyées de manière sécurisée. Toutes les
+                    informations sont protégées à l’aide de la technologie Secure Sockets Layer (SSL).</p>
+
+                <p><br><br><img id="icon" src="img/exchange.png" alt=""> &nbsp; ÉCHANGE ET REMBOURSEMENT</p>
+                <p><br>Pendant la période de fêtes, le délai de retour est prolongé jusqu’au 20 janvier 2023 pour
+                    toute commande passée entre le 15 novembre et le 20 décembre 2022 inclus.</p>
+            </details>
+        </section>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- mon footer -->
+    <footer>
+        <div class="empty"></div>
+
+        <div class="footerText">
+            <div>
+                <p class="semibold">Collections :</p>
+                <p><a href="#">Casual</a></p>
+                <p><a href="#">Exentrique</a></p>
+                <p><a href="#">Les Basiques</a></p>
+            </div>
+            <div>
+                <p class="semibold">Restez connectés :</p>
+                <p><a href="#">Les Ah-Bas !</a></p>
+                <p><a href="#">Notre Newsletter :</a></p>
+                <form>
+                    <input class="barreEmail" type="email" name="email" placeholder="Email">
+                    <input class="boutton" type="submit">
+                </form>
+            </div>
+            <div>
+                <p class="semibold">La marque :</p>
+                <p><a href="#">A propos</a></p>
+                <p><a href="#">Politique de confidentialité</a></p>
+                <p><a href="#">Mentions légales</a></p>
+                <p><a href="#">Conditions générales de ventes</a></p>
+            </div>
+            <div>
+                <p class="semibold">Ou nous contacter :</p>
+                <p><a href="#">Contact</a></p>
+                <p class="semibold">Nos résaux :</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+

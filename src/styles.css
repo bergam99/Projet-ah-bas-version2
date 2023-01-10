@@ -1,4 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* tailwind library */
+/* @import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+/* normalize */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family:; */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
 :root {
     --color-bg: #FFF0EB;
     --color-footer: #EBD4D1;

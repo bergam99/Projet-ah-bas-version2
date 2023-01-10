@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Limbu&display=swap');
+
+/*<title> font-family: 'Noto Sans Limbu', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+Limbu&family=Noto+Serif+Khojki&display=swap');
+
+/* font-family: 'Lora', serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Noto+Sans+Limbu&family=Noto+Serif+Khojki&family=Roboto:ital,wght@0,700;0,900;1,500&display=swap');
+/* Bold */
+
+/* default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Lora', serif;
+    color: #2A211E;
+
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+body{
+    background: #FFFAF5;
+}
+::selection {
+    background: #B48165;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Library */
+
+.title{
+    font-weight: bolder;
+
+
+}
+.flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-logo{
+    display: flex;
+    justify-content:center ;
+    /* width: clamp(7em, 5vw, 3.5em) */
+}
+
+
+.besoin-mobile{
+    display: none;
+}
+
+:root{
+    --color-white: #fff;
+    --color-bg: #FFF0EB;
+    --color-footer: #B48165;
+    --color-footer2: #B48165;
+    --color-text: #61504B;
+    --color-clair: #FFF9F6;
+}
+
+
+.column{
+    flex-direction: column;
+}
+
+.line-height-2{
+    line-height: 2em;
+}
+
+
+.mention{
+    font-size:smaller;
+}
+.mention > a{
+    border-bottom: black 1px solid;
+}
+
+.flex > .flex-gap > .bold{
+    font-weight:bold;
+}
+.flex-gap{
+    gap: 10px;
+
+}
+
+/* main */
+main{
+    margin-top: 60px;
+}
+
+
+/* Header */
+
+
+header{
+    /* margin: 20; */
+    min-height: 3vw;
+    max-height: 5vw;
+    /* background: #FF8787; */
+    border-bottom:#2A211E 1px solid;
+    padding: 20px;
+
+}
+
+
+.flex-logo > a > img{
+    min-height: 3vw;
+    max-height: 5vw;
+}
+
+header > a{
+    max-width: min(200px, 100%);
+
+}
+
+
+/* panier */
+#panier {
+    width: min(660px, 100%);
+
+}
+
+
+.qte{
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 10px;
+}
+
+#plus, #moins{
+    background-color: hsla(38, 70%, 88%, 1);
+    border: 1.4px solid #2A211E;
+    margin: 1px;
+    border-radius: 50px;
+    font-family: 'Noto Sans Limbu', sans-serif;
+    font-size: larger;
+    width: 30px;
+    height: 30px;
+
+}
+.button-qte{
+    justify-items: right;
+}
+.hidden{
+margin-right: 8vw;}
+
+.width{
+    width: min(526px, 100%);
+    /* background-color: #FF8787; */
+}
+
+#panier > .flex > img{
+    margin: 25px;
+    
+}
+/* clamp 적용 안됨 */
+#panier > h2{
+    text-align: center;
+    /* min-width: 3vw; */
+}
+#panier > h3{
+    padding: 10px;
+    /* font-size:(1rem, 5vw, 3.5rem); */
+}
+
+
+#bottom-total {
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    justify-content: left;
+}
+
+
+#bottom > button, .button-contact > button, #bottom-total > button{
+    background-color: hsla(38, 70%, 88%, 1);
+    border: 1.4px solid #2A211E;
+    margin: 20px;
+    border-radius: 50px;
+    padding: 15px 0 ;
+    font-family: 'Noto Sans Limbu', sans-serif;
+    width: 272px;
+
+}
+
+
+
+#bottom{
+    text-align: center;
+    justify-content: left;
+}
+
+
+button:hover{
+    color: #FF8787;
+}
+
+
+
+
+/* TOTAL */
+#total{
+    width: min(472px, 100%);
+    border: #2A211E 2px solid;
+    border-radius: 7px;
+    padding:25px;
+    align-self: flex-start;
+    justify-content: flex-end;
+}
+
+#total > span{
+    padding: 10px;
+}
+
+.underline, h3{
+    border-bottom: #2A211E 1px solid;
+}
+
+
+#total > .sous-total > .space{
+    padding: 10px;
+    margin-top: 5px;
+}
+
+/* letter spacing */
+.space-1{
+    word-spacing: 310px;
+
+}
+.space-2{
+    word-spacing: 320px;
+
+}
+
+.space-3{
+    word-spacing: 285px;
+}
+
+.space-4{
+    word-spacing: 350px;
+ 
+}
+
+#icon{
+    width: 21px;
+    float: left;
+}
+
+#besoin p{
+    float: left;
+}
+
+/* BESOIN */
+.button-contact{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.button-contact button{
+    width: 20vw;
+    padding: 15px 0 ;
+    font-family: 'Noto Sans Limbu', sans-serif;
+    width: 272px;
+    align-self: center;
+    
+}
+
+
+.gap{
+    gap: 12em;
+
+
+}
+#besoin{
+    width: min(472px, 100%);
+    border: #2A211E 2px solid;
+    border-radius: 7px;
+    padding:25px;
+    margin-bottom: 30px;
+}
+
+.flex-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: left;
+}
+
+ 
+
+
+
+.invisible{
+    width: min(472px, 100%);
+    border: #2A211E 2px solid;
+    height: 400px;
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: var(--color-footer);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText {
+    width: 100%;
+    padding: 60px 8% 75px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.empty {
+    width: 12.2%;
+    background-color: var(--color-footer2);
+    
+}
+
+.semibold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.barreEmail {
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-footer2);
+}
+
+.boutton {
+    background-color: var(--color-footer2);
+    border: none;
+    color: var(--color-text);
+    padding: 4px;
+}
+
+
+
+
+.logo-mobile{
+    display: none;
+    text-align: center;
+
+}
+
+
+/* MEDIA */
+
+@media (max-width: 1160px){
+    main{
+        flex-direction: column;
+    }
+
+    .invisible{
+        display: none;
+    }
+    #total, #besoin{
+        border: none;
+    }
+    #total{
+        align-self: center;
+        margin: 20px;
+    }
+
+    #bottom{
+        display: none;
+    }
+
+    .button-total{
+        display: none;
+    }
+    #besoin{
+        margin: 10px;
+    }
+
+    .besoin-desktop{
+        display: none;
+    }
+    .besoin-mobile{
+        display:block;
+        max-width: 472px;
+        margin-left: 10%;
+    }
+
+
+    
+}
+
+@media (max-width: 800px){
+
+
+    .flex-logo{
+        display: none;
+    }
+    .logo-mobile{
+        display: block;
+
+
+        
+    }
+}
+
+@media (max-width: 895px){
+    #total{
+        line-height: none;
+    }
+}
+
+@media (max-width: 895px){
+    .small-button > .flex > .paypal{
+        margin:0;
+        line-height: none;
+
+    }
+}
+
+/* footer */
+@media (max-width: 895px){
+    .footerText {
+        flex-direction: column;
+    }
+
+    footer form input {
+        width: 100%;
+        padding: 0;
+    }
+}

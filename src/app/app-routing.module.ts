@@ -11,9 +11,9 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { PaiementComponent } from './pages/paiement/paiement.component';
 import { PanierComponent } from './pages/panier/panier.component';
 import { PolitiqueComponent } from './pages/politique/politique.component';
-import { ProductsComponent } from './pages/products/products.component';
 import { ProposComponent } from './pages/propos/propos.component';
 import { PaiementSuccessComponent } from './pages/paiement-success/paiement-success.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 const routes: Routes = [
   {
@@ -25,16 +25,16 @@ const routes: Routes = [
     component:CategoryComponent
   },
   {
+    path: "product-details/:id",
+    component: ProductDetailsComponent
+  },
+  {
     path:"paiement",
     component:PaiementComponent
   },
   {
     path:"paiement-succes",
     component:PaiementSuccessComponent
-  },
-  {
-    path:"produits",
-    component:ProductsComponent
   },
   {
     path:"contact",
@@ -67,10 +67,6 @@ const routes: Routes = [
   {
     path:"propos",
     component:ProposComponent
-  },
-  {
-    path:"not-found",
-    component: NotFoundComponent
   },
   {
     path: "**",
